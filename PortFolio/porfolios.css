@@ -1,0 +1,633 @@
+*{
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+}
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	background-image: url("fotos/fondo.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	
+}
+
+li{
+	list-style: none;
+}
+
+#header{
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 20px;
+	background-color: black;
+	color: white;
+}
+
+#header h1{
+	border: solid 1px white;
+	width: 25%;
+	text-align: center;
+}
+
+#header nav{
+	width: 50%;
+}
+
+#header ul{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#header a:link, #header a:visited {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+	padding: 2px;
+}
+
+
+#header a:hover, #header a:active {
+    background-color: red;
+}
+
+#volver{
+	position: fixed;
+	top: 10.5%;
+	right: 2%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+	padding: 2px;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	border: double black 5px;
+	height:85%;
+	padding:2px;
+	overflow: hidden;
+	margin:auto;
+}
+
+.caja{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	color: white;
+	overflow:hidden;
+
+	border-radius:100%;
+	background-color: transparent;
+	perspective: 1000px;
+}
+
+.caja1{
+	width: 40vw;
+	height: 40vw;
+	position:absolute;
+	top:25%;
+	left:2%;
+}
+#caja1{
+	background-image: url("fotos/fondo1.jpg");
+	background-size:cover;
+}
+
+.caja7{
+	width: 40vw;
+	height: 40vw;
+	position:absolute;
+	top:25%;
+	right:2%;
+}
+#caja7{
+	background-image: url("fotos/fondo7.jpg");
+	background-size:cover;
+}
+.caja7 img{
+	height:300px;
+	width:1px;
+}
+
+ .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+
+  border-radius:100%;
+}
+.caja:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+
+}
+
+.flip-card-front img{
+	width: 100%;
+	height:100%;
+	min-width: 150px;
+}
+#foto {
+	height:100px;
+	width:100px;
+	padding:2px;
+}
+
+.flip-card-front {
+  color: black;
+  z-index: 2;
+  border-radius:100%;
+}
+
+.flip-card-back {
+	color: white;
+	transform: rotateY(180deg);
+	z-index: 1; 
+	opacity:0.9;
+	border-radius:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	
+	
+}
+.flip-card-back li {
+
+  border-radius:100%;
+
+}
+.wrap{
+	height:100%;
+	width: 100%;
+}
+#wrap1{
+	background-image: url("fotos/fondo1.jpg");
+	background-size: cover;
+}
+.li1{
+	 font-size: 350%;
+	 font-style:oblique;
+
+
+}
+.color1{
+	background:white;
+	opacity:0.7;
+	border-radius:100%;
+	  text-decoration: none;
+}
+
+
+#wrap7{
+	background-image: url("fotos/fondo7.jpg");
+	background-size: cover;
+}
+.li7{
+	 font-size: 450%;
+	 font-style:oblique;
+  color: green;
+
+}
+.color7{
+	background:white;
+	opacity:0.7;
+	border-radius:100%;
+	  text-decoration: none;
+}
+
+/*biografia*/
+
+.biog{
+background:black;
+width:100%;
+margin:auto;
+height:6%;
+justify-content:center;
+display:flex;
+}
+
+.containerBio{
+	height:85%;
+	width:100%;
+	display:flex;
+}
+.biog2{
+	width:25%;
+	height:100%;
+
+}
+.biog3{
+	width:50%;
+	height:100%;
+	border:double 6px;
+}
+.biog4{
+	width:25%;
+	height:100%;
+
+
+}
+
+.biogI{
+	width:100%;
+
+	margin:auto;
+}
+.biogInfo{
+	height:6%;
+	width:75%;
+	margin:auto;
+	justify-content:center;
+	display:flex;
+	margin-top:5%;
+	
+}
+.biogInfo1 {
+	margin-top:5%;
+}
+.biogInfo h2{
+	font-size:250%;
+	font-family: 'Margarine', cursive;
+}
+.biogI {
+justify-content:center;
+display:flex;
+height:7%
+}
+.biogInfo4{
+height:68%;
+padding-left:2%;
+font-size:80%;
+}
+.footer{
+	width:100%;
+	height:5%;
+	background:black;
+}
+.footer p{
+	color:white;
+}
+.footer a{
+	color:white;
+}
+.footer1{
+	width:100%;
+	height:5%;
+	background:black;
+	justify-content:space-around;
+	display:flex;
+	margin:auto;
+}
+.footer1 p{
+	color:white;
+}
+.footer1 a{
+	color:white;
+}
+.biogIdioma1{
+	background-image: url("fotos/cn.jpg");
+	height:31%;
+	opacity:0.8	;
+	background-size: cover;
+}
+.biogIdioma1 h2 {
+	color:white;
+	font-size:200%;
+	margin:auto;
+
+}
+.biogIdioma2{
+	background-image: url("fotos/spain.jpg");
+	height:31%;
+	opacity:0.8	;
+		background-size: cover;
+}
+.biogIdioma2 h2 {
+	color:white;
+	font-size:200%;
+	margin:auto;
+}
+.biogIdioma3{
+	background-image: url("fotos/ingles.jpg");
+	height:30%;
+	opacity:0.8	;
+		background-size: cover;
+}
+.biogIdioma3 h2 {
+	color:white;
+	font-size:200%;
+	margin:auto;
+}
+.biogHabilidad{
+	width:100%;
+	height:12%;
+	justify-content:center;
+	display:flex;
+	margin-top:3%;
+}
+.biogHabilidad h3{
+	font-size:250%;
+	font-family: 'Margarine', cursive;
+}
+.biogHabilidad1{
+	width:100%;
+	height:42%;
+	display:flex;
+	justify-content:space-around;
+}
+.biogHabilidad2{
+	height:60%;
+	width:33%;
+	border: outset 2px;
+	
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80vw;
+  height: 80vh;
+}
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position:absolute;
+  right:11%;
+  top:10%;
+
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#myBtn  {
+	font-family: 'Margarine', cursive;
+	font-size:200%;
+	background-image: url("fotos/fondo.jpg");
+	background-size: cover;
+	color:white;
+	padding:1%;
+	width:12.5%;
+	justify-content: center;
+    display: flex;
+	
+}
+#myBtn:hover{
+	background-image: url("fotos/fondoHover.jpg");
+	background-size: cover;
+	padding:1%;
+	width:12.5%;
+}
+#myBtn1  {
+	font-family: 'Margarine', cursive;
+	font-size:200%;
+	background-image: url("fotos/fondo1.jpg");
+	background-size: cover;
+	color:white;
+	padding:1%;
+	width:12.5%;
+	justify-content: center;
+    display: flex;
+}
+#myBtn1:hover{
+	background-image: url("fotos/fondoHover1.jpg");
+	background-size: cover;
+	width:12.5%;
+}
+#myBtn2  {
+	font-family: 'Margarine', cursive;
+	font-size:200%;
+	background-image: url("fotos/fondo2.jpg");
+	background-size: cover;
+	color:white;
+	padding:1%;
+	width:12.5%;
+	justify-content: center;
+    display: flex;
+}
+#myBtn2:hover {
+
+	background-image: url("fotos/fondoHover2.jpg");
+	background-size: cover;
+	padding:1%;
+	width:12.5%;
+}
+#myBtn3  {
+	font-family: 'Margarine', cursive;
+	font-size:200%;
+	background-image: url("fotos/fondo3.jpg");
+	background-size: cover;
+	color:white;
+	padding:1%;
+	width:12.5%;
+	justify-content: center;
+    display: flex;
+}
+#myBtn3:hover {
+	background-image: url("fotos/fondoHover3.jpg");
+	background-size: cover;
+	width:12.5%;
+}
+#myBtn4  {
+	font-family: 'Margarine', cursive;
+	font-size:200%;
+	background-image: url("fotos/fondo4.jpg");
+	background-size: cover;
+	color:white;
+	padding:1%;
+	width:12.5%;
+	justify-content: center;
+    display: flex;
+}
+#myBtn4:hover{
+	background-image: url("fotos/fondoHover4.jpg");
+	background-size: cover;
+	width:12.5%;
+
+}
+#myBtn5  {
+	font-family: 'Margarine', cursive;
+	font-size:200%;
+	background-image: url("fotos/fondo5.jpg");
+	background-size: cover;
+	color:white;
+	padding:1%;
+	width:12.5%;
+	justify-content: center;
+    display: flex;
+}
+#myBtn5:hover {
+	background-image: url("fotos/fondoHover5.jpg");
+	background-size: cover;
+	width:12.5%;
+}
+#myBtn6  {
+	font-family: 'Margarine', cursive;
+	font-size:200%;
+	background-image: url("fotos/fondo6.jpg");
+	background-size: cover;
+	color:white;
+	padding:1%;
+	width:12.5%;
+    justify-content: center;
+    display: flex;
+}
+#myBtn6:hover {
+	background-image: url("fotos/fondoHover6.jpg");
+	background-size: cover;
+	width:12.5%;
+}
+#myBtn7  {
+	font-family: 'Margarine', cursive;
+	font-size:200%;
+	background-image: url("fotos/fondo7.jpg");
+	background-size: cover;
+	color:white;
+	padding:1%;
+	width:12.5%;
+    justify-content: center;
+    display: flex;
+}
+#myBtn7:hover {
+	background-image: url("fotos/fondoHover7.jpg");
+	background-size: cover;
+	width:12.5%;
+}
+
+
+
+.button{
+	display:flex;
+	position:absolute;
+	width:100%;
+	height:100%;
+	
+}
+#content1{
+	background-image: url("fotos/fondo.jpg");
+	background-size: cover;
+	display:flex;
+}
+#content2{
+	background-image: url("fotos/fondo1.jpg");
+	background-size: cover;
+		display:flex;
+	
+}
+#content3{
+	background-image: url("fotos/fondo2.jpg");
+	background-size: cover;
+		display:flex;
+}
+#content4{
+	background-image: url("fotos/fondo3.jpg");
+	background-size: cover;
+	display:flex;
+	}
+#content5{
+	background-image: url("fotos/fondo4.jpg");
+	background-size: cover;
+	display:flex;
+	}
+#content6{
+	background-image: url("fotos/fondo5.jpg");
+	background-size: cover;
+	display:flex;
+	}
+#content7{
+	background-image: url("fotos/fondo6.jpg");
+	background-size: cover;
+	display:flex;
+	}
+#content8{
+	background-image: url("fotos/fondo7.jpg");
+	background-size: cover;
+	display:flex;
+	}
+.cajaAnimacion{
+	width:33%;
+	height:33%;
+
+	margin:auto;
+}
+
+.cajaModelado{
+	width:33%;
+	height:33%;
+	margin:auto;	
+}
+.cajaCompo{
+	width:33%;
+	height:33%;
+	margin:auto;	
+}
+.cajaRig{
+	width:33%;
+	height:33%;
+	margin:auto;	
+}
+.cajaAcabado{
+	width:33%;
+	height:33%;
+	margin:auto;	
+}
+.cajaConcept{
+	width:33%;
+	height:33%;
+	margin:auto;	
+
+}
+.cajaDibujo{
+	width:33%;
+	height:33%;
+	margin:auto;	
+}
+.cajaUnity{
+	width:33%;
+	height:33%;
+	margin:auto;	
+}
